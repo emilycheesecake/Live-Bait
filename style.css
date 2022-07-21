@@ -48,6 +48,7 @@ nav ul {
 .mainwrapper {
   display: flex;
   margin-top: 32px;
+  max-height: 600px;
 }
 
 .card {
@@ -63,7 +64,6 @@ nav ul {
   flex: 70%;
   background: url('images/pinkfish.jpg');
   background-size: cover;
-  min-height: 400px;
   color: var(--light);
 }
 
@@ -116,6 +116,8 @@ nav ul {
 .pricewrapper {
   display: flex;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .pricetype {
@@ -123,7 +125,15 @@ nav ul {
   padding: 20px;
 }
 
+.pricetype table {
+  margin: auto;
+}
+
 @media screen and (max-width: 700px) {
+  .mainwrapper {
+    max-height: 400px;
+  }
+
   .mainwrapper, .pricewrapper {
     flex-flow: column;
   }
